@@ -100,6 +100,7 @@
 	<target name="clean">
 		<delete dir="${target-build}"/>
 		<delete dir="${target-release}"/>
+		<delete dir="${target}"/>
 	</target>
 
 </project>
