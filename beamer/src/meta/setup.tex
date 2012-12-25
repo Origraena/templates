@@ -41,3 +41,20 @@
         stringstyle=\color{lst_str},
 }
 
+% TOC
+\AtBeginSection[]{ 
+	\begin{frame} 
+		\frametitle{Table des matières}
+		\tableofcontents[currentsection,hideallsubsections] 
+	\end{frame} 
+}
+
+\AtBeginSubsection[]{ 
+	\begin{frame} 
+		\frametitle{Table des matières}
+		\tableofcontents[currentsection,currentsubsection,hideothersubsections] 
+	\end{frame} 
+}
+
+
+
