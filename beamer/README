@@ -1,0 +1,10 @@
+TITRE
+=====
+
+* res/                  external ressources (png,jpg,...)
+* src/
+	-> content/         main content
+	-> figures/         tikz or includegraphics
+	-> meta/            functions, setup, ...
+	-> bib.bib          bibliography
+	-> main.tex         main file (including all others)

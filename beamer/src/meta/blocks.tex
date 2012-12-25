@@ -1,0 +1,97 @@
+% blocks.tex
+% 2012/10/25
+% define some block structures
+
+	% COLORS %
+
+% normal block title color
+\colorlet{nblocktbg}{blue!60!white!30} % bg
+\colorlet{nblocktfg}{blue!66!black}   % fg
+
+% normal block body color
+\colorlet{nblockbbg}{blue!40!white!30} % bg
+\colorlet{nblockbfg}{black}            % fg
+
+% input block title color
+\colorlet{iblocktbg}{green!40!blue!30} % bg
+\colorlet{iblocktfg}{green!66!black}   % fg
+
+% input block body color
+\colorlet{iblockbbg}{green!30!blue!15} % bg
+\colorlet{iblockbfg}{black}            % fg
+
+% output block title color
+\colorlet{oblocktbg}{orange!40!blue!30} % bg
+\colorlet{oblocktfg}{orange!66!black}   % fg
+
+% output block body color
+\colorlet{oblockbbg}{orange!30!blue!15} % bg
+\colorlet{oblockbfg}{black}             % fg
+
+
+	% ENVIRONMENTS %
+
+% normal block
+\newenvironment{normalblock}[1] {
+	\setbeamercolor{block title}{bg=nblocktbg,fg=nblocktfg}
+	\setbeamercolor{block body}{bg=nblockbbg,fg=nblockbfg}
+	%\setlength{\textwidth}{3cm}
+	\begin{block}{#1}
+} {
+	\end{block}
+}
+
+% input block
+\newenvironment{inputblock}[1] {
+	\setbeamercolor{block title}{bg=iblocktbg,fg=iblocktfg}
+	\setbeamercolor{block body}{bg=iblockbbg,fg=iblockbfg}
+	\begin{block}{#1}
+} {
+	\end{block}
+}
+
+% output block
+\newenvironment{outputblock}[1] {
+	\setbeamercolor{block title}{bg=oblocktbg,fg=oblocktfg}
+	\setbeamercolor{block body}{bg=oblockbbg,fg=oblockbfg}
+	\begin{block}{#1}
+} {
+	\end{block}
+}
+
+% convenient normal block
+\newenvironment{nblock}[1]{
+	\begin{normalblock}{#1}
+	\begin{itemize}
+}{
+	\end{itemize}
+	\end{normalblock}
+}
+
+% convenient input block
+\newenvironment{iblock}{
+	\begin{inputblock}{Entrée}
+	\begin{itemize}
+}{
+	\end{itemize}
+	\end{inputblock}
+}
+
+% convenient output block
+\newenvironment{oblock}{
+	\begin{outputblock}{Sortie}
+	\begin{itemize}
+}{
+	\end{itemize}
+	\end{outputblock}
+}
+
+% convenient conclusion block
+\newenvironment{cblock}[1]{
+	\begin{exampleblock}{#1}
+	\begin{itemize}
+}{
+	\end{itemize}
+	\end{exampleblock}
+}
+
