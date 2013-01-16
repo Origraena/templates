@@ -41,6 +41,24 @@
         stringstyle=\color{lst_str},
 }
 
+
+% TODO integrer au template beamer
+\colorlet{blockred}{red!30!black!15}
+\colorlet{blocktitlered}{red!40!black!30}
+\colorlet{titlered}{red!66!black}
+\definecolor{titlegrey}{gray}{0.9}
+
+\setbeamertemplate{navigation symbols}{}
+\useinnertheme[shadow=true]{rounded} 
+\useoutertheme{infolines}
+\usecolortheme{beaver}
+
+\setbeamerfont{block title}{size={}}
+\setbeamercolor{titlelike}{parent=structure,bg=titlegrey}
+
+\setbeamercolor{block body example}{bg=blockred}
+\setbeamercolor{block title example}{fg=titlered,bg=blocktitlered}
+
 % TOC
 \AtBeginSection[]{ 
 	\begin{frame} 

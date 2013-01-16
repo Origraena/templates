@@ -87,6 +87,11 @@
 }
 
 % convenient conclusion block
+\newenvironment{conclusionblock}[1]{
+	\begin{exampleblock}{#1}
+}{
+	\end{exampleblock}
+}
 \newenvironment{cblock}[1]{
 	\begin{exampleblock}{#1}
 	\begin{itemize}
@@ -94,4 +99,27 @@
 	\end{itemize}
 	\end{exampleblock}
 }
+
+% def block
+\newenvironment{defblock}[1]{
+	\begin{normalblock}{{\bf Définition :} #1}
+}{
+	\end{normalblock}
+}
+
+% lemma block
+\newenvironment{lemblock}[1]{
+	\begin{inputblock}{{\bf Lemme :} #1}
+}{
+	\end{inputblock}
+}
+
+% theorem block
+\newenvironment{thblock}[1]{
+	\begin{outputblock}{{\bf Théorème :} #1}
+}{
+	\end{outputblock}
+}
+
+
 
