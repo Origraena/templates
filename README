@@ -3,7 +3,7 @@
 
 * jproject : java project
 
-= Utilisation =
+= How To =
 * copy the template project / file to a new location
 * define some properties into build.xml
 * fullfill the README file
