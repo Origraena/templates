@@ -40,5 +40,13 @@ Thumbs.db
 *.swp
 *.swo
 *.swn
-*.*~
+*~
+*.bak
 
+# OUT #
+#######
+*.log
+*.out
+*.pdf
+*.aux
+*.bak
